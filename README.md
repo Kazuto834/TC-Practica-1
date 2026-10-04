@@ -22,11 +22,11 @@
   * [Captura de Pull Request Fusionado](evidencias/git/pull-request.png)
 
 ### Ejercicio 2: Investigacion: qué es la Teoría de la Computación
-* **Documento:** [Investigacion-E2](docs/)
+* **Documento:** [Investigacion-E2](docs/02-investigacion.md)
 
 
 ### Ejercicio 3: Estado del arte: cinco artículos
-* **Documento:** [](docs/)
+* **Documento:** [](docs/03-estado-del-arte.md)
 
 ### Ejercicio 4: Autómatas finitos en JFLAP
 * **Documento:** [](docs/)
