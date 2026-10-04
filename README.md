@@ -26,7 +26,7 @@
 
 
 ### Ejercicio 3: Estado del arte: cinco artículos
-* **Documento:** [](docs/03-estado-del-arte.md)
+* **Documento:** [Estado-del-arte-E3](docs/03-estado-del-arte.md)
 
 ### Ejercicio 4: Autómatas finitos en JFLAP
 * **Documento:** [](docs/)
