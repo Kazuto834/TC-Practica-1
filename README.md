@@ -29,7 +29,7 @@
 * **Documento:** [Estado-del-arte-E3](docs/03-estado-del-arte.md)
 
 ### Ejercicio 4: Autómatas finitos en JFLAP
-* **Documento:** [](docs/)
+* **Documento:** [Automatas JFLAP](docs/04-automatas.md)
 
 ### Ejercicio 5: Aplicación con interfaz gráfica
 * **Documento Explicativo:** [App en Python con Flat](docs/05-aplicacion.md)
