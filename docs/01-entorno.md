@@ -5,19 +5,19 @@
 Es la versión más antigua de Python que aún cuenta con soporte activo/mantenimiento oficial y que cumple con el requisito mínimo de versión para la publicación de Flet utilizada en la práctica. Permite validar retrocompatibilidad con versiones previas aún vigentes.
 
 Evidencia de ejecución con contenedores:
-![Captura de consola evidencia python 3.11](evidencias/pythonC11.jpg)
+![Captura de consola evidencia python 3.11](../evidencias/docker/pythonC11.jpg)
 
 **py312 (python:3.12-slim):**
 Es la versión de referencia oficial del curso. Es la encargada de ejecutar y servir la aplicación web interactiva (app.py), garantizando un comportamiento estable y estandarizado para las revisiones.
 
 Evidencia de ejecución con contenedores:
-![Captura de consola evidencia python 3.12](evidencias/pythonC12.jpg)
+![Captura de consola evidencia python 3.12](../evidencias/docker/pythonC12.jpg)
 
 **py313 (python:3.13-slim):**
 Es una versión reciente del lenguaje. Permite verificar que el código implementado (especialmente el núcleo lenguajes.py) no dependa de características obsoletas o de comportamientos internos que hayan cambiado o sido eliminados en las últimas entregas de Python.
 
 Evidencia de ejecución con contenedores:
-![Captura de consola evidencia python 3.13](evidencias/pythonC13.jpg)
+![Captura de consola evidencia python 3.13](../evidencias/docker/pythonC13.jpg)
 
 - Puede consultar los requisitos así como el proceso para instalar Flet en: [Instalación de Flet](https://flet.dev/docs/getting-started/installation/)
 - Aunque no existe un calendario para el soporte de Flet, puede consultar como instalar versiones anteriores en: [Instalación de versiones Flet](https://flet.dev/blog/flet-versioning-and-pre-releases/)
@@ -25,7 +25,7 @@ Evidencia de ejecución con contenedores:
 
 ---
 ## Dokcerfile (explicación de lineas de código)
-Para la elaboración de esta práctica se hizo uso del [Dockerfile](entorno/Dockerfile) anexado por el profesor, por lo que como requisito se realiza la explicación de las líneas de código a continuación:
+Para la elaboración de esta práctica se hizo uso del [Dockerfile](../entorno/Dockerfile) anexado por el profesor, por lo que como requisito se realiza la explicación de las líneas de código a continuación:
 ```dockerfile
 # Un solo Dockerfile para las tres versiones. El numero de version
 # llega desde compose.yml como argumento de construccion
@@ -70,7 +70,7 @@ CMD ["python", "src/app.py"]
 ```
 ---
 ## Compose (explicación de lineas de código)
-Para la elaboración de esta práctica se hizo uso del [compose.yml](entorno/compose.yaml) anexado por el profesor, por lo que como requisito se realiza la explicación de las líneas de código a continuación:
+Para la elaboración de esta práctica se hizo uso del [compose.yml](../entorno/compose.yaml) anexado por el profesor, por lo que como requisito se realiza la explicación de las líneas de código a continuación:
 ```yaml
 # Define los contenedores (servicios) que se van a ejecutar en este entorno
 services:

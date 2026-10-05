@@ -103,12 +103,4 @@ Por el Teorema de Kleene, todo Autómata Finito No Determinista (AFN) puede tran
 ---
 
 ## Referencias
-
-* Gribkoff, E. (2013). *Applications of deterministic finite automata* [Documento de curso, ECS 120]. University of California, Davis. https://www.cs.ucdavis.edu/~rogaway/classes/120/spring13/eric-dfa.pdf
-* Hopcroft, J. E., Motwani, R., y Ullman, J. D. (2007). *Introducción a la teoría de autómatas, lenguajes y computación* (3.ª ed.). Pearson Educación.
-* Linz, P. (2016). *An Introduction to Formal Languages and Automata* (6.ª ed.). Jones & Bartlett Learning.
-* Luna-Benoso, B., Martínez-Perales, J. C., Cortés-Galicia, J., Flores-Carapia, R., y Silva-García, V. M. (2022). Melanoma detection in dermoscopic images using a cellular automata classifier. *Computers, 11*(1), Artículo 8. https://doi.org/10.3390/computers11010008
-* Martin, J. C. (2010). *Introduction to Languages and the Theory of Computation* (4.ª ed.). McGraw-Hill Education.
-* Sipser, M. (2012). *Introduction to the Theory of Computation* (3.ª ed.). Cengage Learning.
-* Sudkamp, T. A. (2005). *Languages and Machines: An Introduction to the Theory of Computer Science* (3.ª ed.). Addison-Wesley.
-* Turing, A. M. (1936). On computable numbers, with an application to the Entscheidungsproblem. *Proceedings of the London Mathematical Society, s2-42*(1), 230-265. https://doi.org/10.1112/plms/s2-42.1.230
+Consultar fuentes en: [bibliografias](docs/bibliografia.md)

@@ -23,7 +23,7 @@ def cerradura_Kleene(alfabeto, maxlength):
     for long in range(maxlength + 1):
         combinaciones = itertools.product(alfabeto, repeat=long)
         for comb in combinaciones:
-            resultado.append(" ".join(comb))
+            resultado.append("".join(comb))
     return resultado
 
 def cerradura_positiva(alfabeto, maxlength):
@@ -32,5 +32,5 @@ def cerradura_positiva(alfabeto, maxlength):
     for long in range(1, maxlength + 1):
         combinaciones = itertools.product(alfabeto, repeat=long)
         for comb in combinaciones:
-            resultado.append(" ".join(comb))
+            resultado.append("".join(comb))
     return resultado

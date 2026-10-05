@@ -11,15 +11,15 @@
 
 ## Índice de la Práctica
 ### Ejercicio 1: Control de versiones con Git y GitHub
-
-#### Parte A: Investigación
-* **Documento:** [Investigacion-E1](docs/)
-
-#### Parte C: Los tres entornos de Python
-* **Documento:** [](docs/)
-* **Evidencias:** Puedes consultar las capturas de pantalla del historial del proyecto y el Pull Request:
+* **Evidencias:** Puedes consultar las capturas de pantalla del historial del repositorio y el Pull Request:
   * [Captura de Git Log](evidencias/git/git-log.png)
   * [Captura de Pull Request Fusionado](evidencias/git/pull-request.png)
+
+#### Parte A: Investigación
+* **Documento:** [Investigacion-E1](docs/01-investigacion.md)
+
+#### Parte C: Los tres entornos de Python
+* **Documento:** [Justificación de entornos](docs/01-entorno.md)
 
 ### Ejercicio 2: Investigacion: qué es la Teoría de la Computación
 * **Documento:** [Investigacion-E2](docs/02-investigacion.md)
@@ -32,5 +32,7 @@
 * **Documento:** [](docs/)
 
 ### Ejercicio 5: Aplicación con interfaz gráfica
-* **Documento Explicativo:** [caso-de-estudio](docs/caso-de-estudio.pdf)
-* **Diagrama ER:** [diagrama-er](modelo/diagrama-er.png)
+* **Documento Explicativo:** [App en Python con Flat](docs/05-aplicacion.md)
+
+### Bibliogarfías:
+* Puede consultar todas las fuentes consultadas para la elaboración de la práctica en: [Bibliografías](docs/bibliografia.md)
