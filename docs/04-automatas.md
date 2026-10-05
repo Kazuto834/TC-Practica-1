@@ -350,9 +350,13 @@ Si el alumno recibe N avanza al siguiente estado sin aumentar su contador de int
 En los problemas 149-150, considere el autómata $A = (Q, \Sigma, \delta, A_0, F)$ definido en cada tabla. Encuentre $Q, \Sigma, A_0$ y $F$, haga el diagrama de transiciones del autómata y halle los valores que se piden en cada inciso.
 
 **149. \*** 
+
 a) $\delta(B,0)$
+
 b) $\delta(C,1)$
+
 c) $\hat{\delta}(A,1101)$
+
 d) $\hat{\delta}(A,01001)$
 
 Tabla de estados:
@@ -364,29 +368,34 @@ Diagrama:
 $Q: \{A, B, C\}$		$\Sigma: \{0, 1\}$		$A_0: A$		$F: \{C\}$
 
 $\delta(B,0) = A$
+
 $\delta(C,1) = A$
 
 $\hat{\delta}(A,1101)$:
-$\delta(A,\lambda) = A$
-$\delta(A,1) = \delta(\delta(A,\lambda), 1) = \delta(A,1) = C$
-$\delta(A,11) = \delta(\delta(A,1), 1) = \delta(C,1) = A$
-$\delta(A,110) = \delta(\delta(A,11), 0) = \delta(A,0) = B$
-$\delta(A,1101) = \delta(\delta(A,110), 1) = \delta(B,1) = C$
+* $\hat{\delta}(A,\lambda) = A$
+* $\hat{\delta}(A,1) = \delta(\hat{\delta}(A,\lambda), 1) = \delta(A,1) = C$
+* $\hat{\delta}(A,11) = \delta(\hat{\delta}(A,1), 1) = \delta(C,1) = A$
+* $\hat{\delta}(A,110) = \delta(\hat{\delta}(A,11), 0) = \delta(A,0) = B$
+* $\hat{\delta}(A,1101) = \delta(\hat{\delta}(A,110), 1) = \delta(B,1) = C$
 
 $\hat{\delta}(A,01001)$:
-$\delta(A,\lambda) = A$
-$\delta(A,0) = \delta(\delta(A,\lambda), 0) = \delta(A,0) = B$
-$\delta(A,01) = \delta(\delta(A,0), 1) = \delta(B,1) = C$
-$\delta(A,010) = \delta(\delta(A,01), 0) = \delta(C,0) = C$
-$\delta(A,0100) = \delta(\delta(A,010), 0) = \delta(C,0) = C$
-$\delta(A,01001) = \delta(\delta(A,0100), 1) = \delta(C,1) = A$
+* $\hat{\delta}(A,\lambda) = A$
+* $\hat{\delta}(A,0) = \delta(\hat{\delta}(A,\lambda), 0) = \delta(A,0) = B$
+* $\hat{\delta}(A,01) = \delta(\hat{\delta}(A,0), 1) = \delta(B,1) = C$
+* $\hat{\delta}(A,010) = \delta(\hat{\delta}(A,01), 0) = \delta(C,0) = C$
+* $\hat{\delta}(A,0100) = \delta(\hat{\delta}(A,010), 0) = \delta(C,0) = C$
+* $\hat{\delta}(A,01001) = \delta(\hat{\delta}(A,0100), 1) = \delta(C,1) = A$
 
 ---
 
 **150. \***
+
 a) $\hat{\delta}(B,10a11)$
+
 b) $\hat{\delta}(B,aa1100)$
+
 c) $\hat{\delta}(A,a01a01)$
+
 d) $\hat{\delta}(C,a11a00)$
 
 Tabla de estados:
@@ -398,37 +407,36 @@ Diagrama:
 $Q: \{A, B, C, D\}$	$\Sigma: \{0, 1, a\}$		$A_0: A$		$F: \{B, C, D\}$
 
 $\hat{\delta}(B,10a11)$:
-$\delta(B,\lambda) = B$
-$\delta(B,1) = \delta(\delta(B,\lambda), 1) = \delta(B,1) = C$
-$\delta(B,10) = \delta(\delta(B,1), 0) = \delta(C,0) = A$
-$\delta(B,10a) = \delta(\delta(B,10), a) = \delta(A,a) = D$
-$\delta(B,10a1) = \delta(\delta(B,10a), 1) = \delta(D,1) = B$
-$\delta(B,10a11) = \delta(\delta(B,10a1), 1) = \delta(B,1) = C$
+* $\hat{\delta}(B,\lambda) = B$
+* $\hat{\delta}(B,1) = \delta(\hat{\delta}(B,\lambda), 1) = \delta(B,1) = C$
+* $\hat{\delta}(B,10) = \delta(\hat{\delta}(B,1), 0) = \delta(C,0) = A$
+* $\hat{\delta}(B,10a) = \delta(\hat{\delta}(B,10), a) = \delta(A,a) = D$
+* $\hat{\delta}(B,10a1) = \delta(\hat{\delta}(B,10a), 1) = \delta(D,1) = B$
+* $\hat{\delta}(B,10a11) = \delta(\hat{\delta}(B,10a1), 1) = \delta(B,1) = C$
 
 $\hat{\delta}(B,aa1100)$:
-$\delta(B,\lambda) = B$
-$\delta(B,a) = \delta(\delta(B,\lambda), a) = \delta(B,a) = C$
-$\delta(B,aa) = \delta(\delta(B,a), a) = \delta(C,a) = D$
-$\delta(B,aa1) = \delta(\delta(B,aa), 1) = \delta(D,1) = B$
-$\delta(B,aa11) = \delta(\delta(B,aa1), 1) = \delta(B,1) = C$
-$\delta(B,aa110) = \delta(\delta(B,aa11), 0) = \delta(C,0) = A$
-$\delta(B,aa1100) = \delta(\delta(B,aa110), 0) = \delta(A,0) = B$
+* $\hat{\delta}(B,\lambda) = B$
+* $\hat{\delta}(B,a) = \delta(\hat{\delta}(B,\lambda), a) = \delta(B,a) = C$
+* $\hat{\delta}(B,aa) = \delta(\hat{\delta}(B,a), a) = \delta(C,a) = D$
+* $\hat{\delta}(B,aa1) = \delta(\hat{\delta}(B,aa), 1) = \delta(D,1) = B$
+* $\hat{\delta}(B,aa11) = \delta(\hat{\delta}(B,aa1), 1) = \delta(B,1) = C$
+* $\hat{\delta}(B,aa110) = \delta(\hat{\delta}(B,aa11), 0) = \delta(C,0) = A$
+* $\hat{\delta}(B,aa1100) = \delta(\hat{\delta}(B,aa110), 0) = \delta(A,0) = B$
 
 $\hat{\delta}(A,a01a01)$:
-$\delta(A,\lambda) = A$
-$\delta(A,a) = \delta(\delta(A,\lambda), a) = \delta(A,a) = D$
-$\delta(A,a0) = \delta(\delta(A,a), 0) = \delta(D,0) = B$
-$\delta(A,a01) = \delta(\delta(A,a0), 1) = \delta(B,1) = C$
-$\delta(A,a01a) = \delta(\delta(A,a01), a) = \delta(C,a) = D$
-$\delta(A,a01a0) = \delta(\delta(A,a01a), 0) = \delta(D,0) = B$
-$\delta(A,a01a01) = \delta(\delta(A,a01a0), 1) = \delta(B,1) = C$
+* $\hat{\delta}(A,\lambda) = A$
+* $\hat{\delta}(A,a) = \delta(\hat{\delta}(A,\lambda), a) = \delta(A,a) = D$
+* $\hat{\delta}(A,a0) = \delta(\hat{\delta}(A,a), 0) = \delta(D,0) = B$
+* $\hat{\delta}(A,a01) = \delta(\hat{\delta}(A,a0), 1) = \delta(B,1) = C$
+* $\hat{\delta}(A,a01a) = \delta(\hat{\delta}(A,a01), a) = \delta(C,a) = D$
+* $\hat{\delta}(A,a01a0) = \delta(\hat{\delta}(A,a01a), 0) = \delta(D,0) = B$
+* $\hat{\delta}(A,a01a01) = \delta(\hat{\delta}(A,a01a0), 1) = \delta(B,1) = C$
 
 $\hat{\delta}(C,a11a00)$:
-$\delta(C,\lambda) = C$
-$\delta(C,a) = \delta(\delta(C,\lambda), a) = \delta(C,a) = D$
-$\delta(C,a1) = \delta(\delta(C,a), 0) = \delta(D,0) = B$
-$\delta(C,a11) = \delta(\delta(C,a1), 1) = \delta(B,1) = C$
-$\delta(C,a11a) = \delta(\delta(C,a11), a) = \delta(C,a) = D$
-$\delta(C,a11a0) = \delta(\delta(C,a11a), 0) = \delta(D,0) = B$
-$\delta(C,a11a00) = \delta(\delta(C,a11a0), 0) = \delta(B,0) = B$
-```eof
+* $\hat{\delta}(C,\lambda) = C$
+* $\hat{\delta}(C,a) = \delta(\hat{\delta}(C,\lambda), a) = \delta(C,a) = D$
+* $\hat{\delta}(C,a1) = \delta(\hat{\delta}(C,a), 0) = \delta(D,0) = B$
+* $\hat{\delta}(C,a11) = \delta(\hat{\delta}(C,a1), 1) = \delta(B,1) = C$
+* $\hat{\delta}(C,a11a) = \delta(\hat{\delta}(C,a11), a) = \delta(C,a) = D$
+* $\hat{\delta}(C,a11a0) = \delta(\hat{\delta}(C,a11a), 0) = \delta(D,0) = B$
+* $\hat{\delta}(C,a11a00) = \delta(\hat{\delta}(C,a11a0), 0) = \delta(B,0) = B$
