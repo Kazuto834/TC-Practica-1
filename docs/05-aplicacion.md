@@ -72,6 +72,7 @@ docker compose run --rm py313 pytest -q
 ![captura prueba exitosa py313](../evidencias/app/pytest313.jpg)
 
 * **Comparativa:** 
+
 | Servicio | Imagen Base | Comando Ejecutado | Resultado `pytest` | Diferencias de Comportamiento / Observaciones |
 | :--- | :--- | :--- | :--- | :--- |
 | `py311` | `python:3.11-slim` | `docker compose run --rm py311 pytest -q` | **PASSED** | Versión estable. Satisface los requisitos mínimos para la versión de Flet utilizada (`flet[web]`). |
