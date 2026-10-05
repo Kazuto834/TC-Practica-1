@@ -42,12 +42,12 @@ def test_alfabeto_un_simbolo():
 
     res_kleene = cerradura_Kleene(alfabeto, maxlength=6)
     assert set(res_kleene) == {
-        "", "a", "a a", "a a a", "a a a a",
-        "a a a a a", "a a a a a a"
+        "", "a", "aa", "aaa", "aaaa",
+        "aaaaa", "aaaaaa"
     }
 
     res_positiva = cerradura_positiva(alfabeto, maxlength=6)
     assert set(res_positiva) == {
-        "a", "a a", "a a a", "a a a a",
-        "a a a a a", "a a a a a a"
+        "a", "aa", "aaa", "aaaa",
+        "aaaaa", "aaaaaa"
     }
